@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul01_HelloWPF", "HelloWP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul02_Controls", "Controls\Modul02_Controls.csproj", "{F62294F3-4367-4E6B-97FC-010B60AF505A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personendatenbank", "Personendatenbank\Personendatenbank.csproj", "{6ED685F6-1B31-4911-A725-088EDFD8B25A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul03_Container", "Container\Modul03_Container.csproj", "{A1202BC7-8CEF-4A42-8404-2D559755F21D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{F62294F3-4367-4E6B-97FC-010B60AF505A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F62294F3-4367-4E6B-97FC-010B60AF505A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F62294F3-4367-4E6B-97FC-010B60AF505A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ED685F6-1B31-4911-A725-088EDFD8B25A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ED685F6-1B31-4911-A725-088EDFD8B25A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ED685F6-1B31-4911-A725-088EDFD8B25A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ED685F6-1B31-4911-A725-088EDFD8B25A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1202BC7-8CEF-4A42-8404-2D559755F21D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1202BC7-8CEF-4A42-8404-2D559755F21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1202BC7-8CEF-4A42-8404-2D559755F21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1202BC7-8CEF-4A42-8404-2D559755F21D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
