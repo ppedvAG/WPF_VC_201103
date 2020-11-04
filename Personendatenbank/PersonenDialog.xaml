@@ -12,6 +12,10 @@
         Topmost="True"
         Style="{StaticResource Sty_Wnd}">
 
+    <Window.Resources>
+        <local:EnumToBoolConverter x:Key="enum2bool"/>
+    </Window.Resources>
+
     <Window.DataContext>
         <local:Person/>
     </Window.DataContext>
@@ -71,11 +75,14 @@
         <StackPanel Margin="2"
                     Grid.Column="1" Grid.Row="5">
             <RadioButton Content="M"
-                         GroupName="Rbg_Gender"/>
+                         GroupName="Rbg_Gender"
+                         IsChecked="{Binding Geschlecht, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource enum2bool}, ConverterParameter={x:Static local:Gender.Männlich}}"/>
             <RadioButton Content="W"
-                         GroupName="Rbg_Gender"/>
+                         GroupName="Rbg_Gender"
+                         IsChecked="{Binding Geschlecht, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource enum2bool}, ConverterParameter={x:Static local:Gender.Weiblich}}"/>
             <RadioButton Content="D"
-                         GroupName="Rbg_Gender"/>
+                         GroupName="Rbg_Gender"
+                         IsChecked="{Binding Geschlecht, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource enum2bool}, ConverterParameter={x:Static local:Gender.Divers}}"/>
         </StackPanel>
 
         <WrapPanel Grid.Row="6" Grid.ColumnSpan="2"
