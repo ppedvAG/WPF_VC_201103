@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul01_HelloWPF", "HelloWPF\Modul01_HelloWPF.csproj", "{464067D5-F04D-477E-8415-A126940F64B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul01_HelloWPF", "HelloWPF\Modul01_HelloWPF.csproj", "{464067D5-F04D-477E-8415-A126940F64B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul02_Controls", "Controls\Modul02_Controls.csproj", "{F62294F3-4367-4E6B-97FC-010B60AF505A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul02_Controls", "Controls\Modul02_Controls.csproj", "{F62294F3-4367-4E6B-97FC-010B60AF505A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personendatenbank", "Personendatenbank\Personendatenbank.csproj", "{6ED685F6-1B31-4911-A725-088EDFD8B25A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personendatenbank", "Personendatenbank\Personendatenbank.csproj", "{6ED685F6-1B31-4911-A725-088EDFD8B25A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul03_Container", "Container\Modul03_Container.csproj", "{A1202BC7-8CEF-4A42-8404-2D559755F21D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul03_Container", "Container\Modul03_Container.csproj", "{A1202BC7-8CEF-4A42-8404-2D559755F21D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul04_RoutedEvents", "RoutedEvents\Modul04_RoutedEvents.csproj", "{CE095410-140C-4BE5-965A-D1B1C2B3BF9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul05_Resources", "Resources\Modul05_Resources.csproj", "{7B729F83-9886-4B28-A0C2-82305305A789}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul06.1_Bindings", "Bindings\Modul06.1_Bindings.csproj", "{A43A0AFB-9CF6-4873-8EDB-C30D2222C9C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul06.2_ValueConverter", "ValueConverter\Modul06.2_ValueConverter.csproj", "{1679DFE3-7293-42A1-8CA6-D8F08363F782}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{A1202BC7-8CEF-4A42-8404-2D559755F21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1202BC7-8CEF-4A42-8404-2D559755F21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1202BC7-8CEF-4A42-8404-2D559755F21D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE095410-140C-4BE5-965A-D1B1C2B3BF9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE095410-140C-4BE5-965A-D1B1C2B3BF9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE095410-140C-4BE5-965A-D1B1C2B3BF9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE095410-140C-4BE5-965A-D1B1C2B3BF9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B729F83-9886-4B28-A0C2-82305305A789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B729F83-9886-4B28-A0C2-82305305A789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B729F83-9886-4B28-A0C2-82305305A789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B729F83-9886-4B28-A0C2-82305305A789}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A43A0AFB-9CF6-4873-8EDB-C30D2222C9C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A43A0AFB-9CF6-4873-8EDB-C30D2222C9C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A43A0AFB-9CF6-4873-8EDB-C30D2222C9C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A43A0AFB-9CF6-4873-8EDB-C30D2222C9C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1679DFE3-7293-42A1-8CA6-D8F08363F782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1679DFE3-7293-42A1-8CA6-D8F08363F782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1679DFE3-7293-42A1-8CA6-D8F08363F782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1679DFE3-7293-42A1-8CA6-D8F08363F782}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
