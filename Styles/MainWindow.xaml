@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="154" Width="324">
     <Window.Resources>
+        <!--Mit Styles konnen Sammlungen Propertes einzelner Controls und Container
+        gebündelt vordefiniert werden. Erhält ein Style einen Key, erhalten alle derartigen
+        Elemente, welche den Style in ihrer Style-Property angeben, diesen Style. Wenn ein Style
+        keinen Key hat, wird er zum Standartlayout derartiger Elemente in der gewählten
+        Range. Lokale Property-Werte haben Vorang vor den Styles.-->
         <Style TargetType="Button">
             <Setter Property="Background" Value="DarkCyan"/>
             <Setter Property="Width" Value="130"/>
@@ -18,6 +23,7 @@
             <Setter Property="FontSize" Value="25"/>
         </Style>
 
+        <!--Mittels der BaseOn-Property kann ein Style alles Propeties eines anderen Styles erben.-->
         <Style TargetType="Button" x:Key="Sty_Btn_02" BasedOn="{StaticResource Sty_Btn_01}">
             <Setter Property="FontFamily" Value="Comic Sans MS"/>
         </Style>

@@ -9,10 +9,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="93" Width="316">
 
+    <!--Über die Ressourcen von App/Window/Container können für die entsprechende Range Daten
+        zur Verfügung gestellt werden. Die Verbindung von Properties zu diesen Resourcen wird dann
+        über eine StaticResource-Bindung hergestellt. Alternativ kann eine DynamicRessource-Bindung 
+        erstellt werden, wodurch die gebundene Property auf Veränderungen an der Ressource durch 
+        den CodeBehind reagiert.-->
     <Window.Resources>
         <ResourceDictionary>
+            <!--Die Einbindung von mehreren ResourceDictionaries erfolgt über die Property MergedDictionaries-->
             <ResourceDictionary.MergedDictionaries>
+                <!--ResourceDictionaries sind XAML-Dateien, welche nur Ressourcen beinhalten-->
                 <ResourceDictionary Source="Dictionary1.xaml"/>
+                <!--
+                <ResourceDictionary Source="Dictionary2.xaml"/>
+                <ResourceDictionary Source="Dictionary3.xaml"/>
+                -->
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
 
@@ -23,9 +34,13 @@
             <sys:Double x:Key="globalFontSize">25.0</sys:Double>
         </StackPanel.Resources>
 
+        <!--Eine Anbindung an Ressourcen erfolgt entweder über eine StaticResource-Bindung, welche den Wert einmalig einholt-->
+        <!--oder über eine DynamicResource-Bindung, welche permanent nach Veränderungen sucht und diese übernimmt-->
         <Button FontSize="{StaticResource globalFontSize}" 
                 Content="{StaticResource stringAusDict}"
                 Background="{StaticResource btn_background}"/>
+        <!--Die x:Static-Bindung ist ebenfalls eine statische Ressourcen-Bindung, welche mächtiger ist, als die 'Normale'.
+        Sie kann zum Beispiel (wie hier) für Bindungen an eine resX-Datei (in den Projekt-Properties) benutzt werden.-->
         <Button FontSize="{DynamicResource globalFontSize}" 
                 Content="{x:Static prop:Resources.meinButtonString}"
                 Click="Button_Click"/>

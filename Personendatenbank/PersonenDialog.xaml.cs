@@ -20,9 +20,27 @@ namespace Personendatenbank
     /// </summary>
     public partial class PersonenDialog : Window
     {
+        public Person NeuePerson { get; set; }
+
         public PersonenDialog()
         {
             InitializeComponent();
+
+            this.NeuePerson = new Person();
+
+            this.DataContext = NeuePerson;
+        }
+
+        private void Btn_Ok_Click(object sender, RoutedEventArgs e)
+        {
+            string ausgabe = NeuePerson.Vorname + " " + NeuePerson.Nachname + " (" + NeuePerson.Geschlecht + ")\n" + NeuePerson.Geburtsdatum.ToShortDateString() + "\n" + NeuePerson.Lieblingsfarbe.ToString();
+            ausgabe += NeuePerson.Verheiratet ? "\nIst Verheiratet" : "";
+            MessageBox.Show(ausgabe, "Neue Person");
+        }
+
+        private void Btn_Abbruch_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -12,11 +12,16 @@
             <Setter Property="Background" Value="Aqua"/>
             <Setter Property="Template">
                 <Setter.Value>
+                    <!--ControlTemplates definieren ein vollständig neues Layout für bestehende Elemente.
+                        Hierbei können alle Controls und Container verwendet werden. Die Zuweisung zu den Elementen
+                        erfolgt über deren Template-Property und den Key des Templates.-->
                     <ControlTemplate TargetType="Button">
                         <Border CornerRadius="50"
                                 BorderThickness="1"
                                 BorderBrush="DeepSkyBlue"
                                 Background="{TemplateBinding Background}">
+                            <!--Statt dem ContentPresenter kann z.B. ein TextBlock verwendet werden, wenn auf speziele Eigenschaften,
+                                    wie z.B. die FontSize eingegangen werden soll-->
                             <!--<Label Content="{TemplateBinding Content}"
                                    HorizontalAlignment="Center"
                                    VerticalAlignment="Center"/>-->
@@ -26,6 +31,7 @@
                         </Border>
 
                         <ControlTemplate.Triggers>
+                            <!--Trigger definieren veränderte Properties, wenn bestimmte Zustände eintreten-->
                             <Trigger Property="IsMouseOver" Value="True">
                                 <Setter Property="Background" Value="LightBlue"/>
                             </Trigger>
@@ -46,7 +52,10 @@
                 Height="100"/>
 
         <StackPanel x:Name="Spl_DataBinding">
-            
+
+            <!--Der DataContext eines Elements (Window / Panel / ...)  ist ein Satz von Daten an dessen Eigenschaften die Properties dieses Elements
+            bzw. der Unterelemente durch vereinfachte Bindung [Syntax: Binding DatenName] verknüpt werden können. Dieser DataContext kann ein
+            instanziertes Objekt sein, eine Liste von Objekten oder das Window selber.-->
             <StackPanel.DataContext>
                 <local:Person Vorname="Anna" Nachname="Meier" Alter="31"/>
             </StackPanel.DataContext>
@@ -62,6 +71,8 @@
                  Height="100"
                  ItemsSource="{Binding Personenliste}">
             <ListBox.ItemTemplate>
+                <!--DataTemplates sind Vorlagen für das Layout von Items in ItemControls (z.B. ListView). Die Bindung erfolgt über die
+                    ItemSource des Zielelements.-->
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="{Binding Vorname}"/>

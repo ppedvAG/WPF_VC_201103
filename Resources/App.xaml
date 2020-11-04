@@ -5,7 +5,8 @@
              StartupUri="MainWindow.xaml">
     
     <Application.Resources>
-        
+
+        <!--Applikationsweite (globale) Ressourcen-->
         <LinearGradientBrush x:Key="btn_background">
             <GradientStop Color="Green" Offset="0"/>
             <GradientStop Color="Orange" Offset="1"/>
