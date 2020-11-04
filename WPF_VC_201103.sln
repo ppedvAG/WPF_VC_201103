@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul06.2_ValueConverter", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul07_Styles", "Styles\Modul07_Styles.csproj", "{F45E3CC5-E851-48C7-AF94-0C0448EF710E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul08_Templates", "Templates\Modul08_Templates.csproj", "{905320A0-E5CA-4104-BAF6-2B9FC09AB922}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{F45E3CC5-E851-48C7-AF94-0C0448EF710E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F45E3CC5-E851-48C7-AF94-0C0448EF710E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F45E3CC5-E851-48C7-AF94-0C0448EF710E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{905320A0-E5CA-4104-BAF6-2B9FC09AB922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{905320A0-E5CA-4104-BAF6-2B9FC09AB922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{905320A0-E5CA-4104-BAF6-2B9FC09AB922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{905320A0-E5CA-4104-BAF6-2B9FC09AB922}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
