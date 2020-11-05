@@ -16,9 +16,8 @@ using System.Windows.Shapes;
 
 namespace Trigger
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+    //Mittels des Events aus dem Interface INotifyPropetyChanged wird die GUI darüber informiert, wenn eine Property aus dem Hintergrund verändert wird. Dadurch sind
+    //Bindungen und Trigger an .NET-Properties möglich. Der Eventaufruf muss an dem Punkt stattfinden, an dem die GUI über die Veränderung informiert werden soll (siehe Setter)
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
@@ -27,20 +26,24 @@ namespace Trigger
         public bool BoolVal
         {
             get { return boolVal; }
-            set 
-            { 
+            set
+            {
                 boolVal = value;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(BoolVal)));
             }
         }
 
+
         public MainWindow()
         {
             InitializeComponent();
 
-            BoolVal = true;
+            //Initialisierung der Property
+            this.BoolVal = true;
 
+            //Setzen des DataContext
             this.DataContext = this;
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
