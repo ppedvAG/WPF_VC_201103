@@ -23,13 +23,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul07_Styles", "Styles\Mo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul08_Templates", "Templates\Modul08_Templates.csproj", "{905320A0-E5CA-4104-BAF6-2B9FC09AB922}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul09_Validation", "Validation\Modul09_Validation.csproj", "{84E82309-60B7-4231-8795-7212EE345B43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul09_Validation", "Validation\Modul09_Validation.csproj", "{84E82309-60B7-4231-8795-7212EE345B43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul10_RelativeSources", "RelativeSources\Modul10_RelativeSources.csproj", "{610027F7-3F0B-4ECF-99A6-8C52D0FC8C14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul10_RelativeSources", "RelativeSources\Modul10_RelativeSources.csproj", "{610027F7-3F0B-4ECF-99A6-8C52D0FC8C14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul11_Trigger", "Trigger\Modul11_Trigger.csproj", "{B927AFAD-43AA-40B4-96E5-E00F7C21897E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul11_Trigger", "Trigger\Modul11_Trigger.csproj", "{B927AFAD-43AA-40B4-96E5-E00F7C21897E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul12_MyUserControls", "MyUserControls\Modul12_MyUserControls.csproj", "{D1068CDF-1C02-47CF-9B04-09FA3920E487}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul12_MyUserControls", "MyUserControls\Modul12_MyUserControls.csproj", "{D1068CDF-1C02-47CF-9B04-09FA3920E487}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul13_Commands", "Commands\Modul13_Commands.csproj", "{272E8952-03E8-41BC-8EB0-33187B28746E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM_Personendatenbank", "MVVM_Personendatenbank\MVVM_Personendatenbank.csproj", "{EA567AB8-012D-43BC-823C-001ECEBA8B5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul14_Localisation", "Localisation\Modul14_Localisation.csproj", "{8D8AE2C6-0E93-46CA-A01E-54578E95BD2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul15_Animations", "Animations\Modul15_Animations.csproj", "{92B8E6FF-DD26-4D59-A830-030503C3D555}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blend", "Blend\Blend.csproj", "{7C53366A-750F-4C1D-8DC3-96D40C6B2963}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +103,26 @@ Global
 		{D1068CDF-1C02-47CF-9B04-09FA3920E487}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1068CDF-1C02-47CF-9B04-09FA3920E487}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1068CDF-1C02-47CF-9B04-09FA3920E487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{272E8952-03E8-41BC-8EB0-33187B28746E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{272E8952-03E8-41BC-8EB0-33187B28746E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{272E8952-03E8-41BC-8EB0-33187B28746E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{272E8952-03E8-41BC-8EB0-33187B28746E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA567AB8-012D-43BC-823C-001ECEBA8B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA567AB8-012D-43BC-823C-001ECEBA8B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA567AB8-012D-43BC-823C-001ECEBA8B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA567AB8-012D-43BC-823C-001ECEBA8B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D8AE2C6-0E93-46CA-A01E-54578E95BD2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D8AE2C6-0E93-46CA-A01E-54578E95BD2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D8AE2C6-0E93-46CA-A01E-54578E95BD2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D8AE2C6-0E93-46CA-A01E-54578E95BD2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92B8E6FF-DD26-4D59-A830-030503C3D555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92B8E6FF-DD26-4D59-A830-030503C3D555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92B8E6FF-DD26-4D59-A830-030503C3D555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92B8E6FF-DD26-4D59-A830-030503C3D555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C53366A-750F-4C1D-8DC3-96D40C6B2963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C53366A-750F-4C1D-8DC3-96D40C6B2963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C53366A-750F-4C1D-8DC3-96D40C6B2963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C53366A-750F-4C1D-8DC3-96D40C6B2963}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
